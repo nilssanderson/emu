@@ -1,6 +1,6 @@
 # Emu #
 
-> Helper framework that has automation using [Gulp](http://gulpjs.com/) for the build process (compression, compilation and browser syncing) and [Materialize](http://materializecss.com/) (built based on Google's Material Design) for the SCSS framework.
+> Helper framework that has automation using [Gulp](http://gulpjs.com/) for the build process (compression, compilation and browser syncing) and [Bourbon and Neat](http://bourbon.io/) (maintained and funded by thoughtbot, inc) for the SCSS framework.
 
 
 ### What is this repository for? ###
