@@ -1,0 +1,12 @@
+.container {
+    @include outer-container;
+
+    &.main {
+        margin-top: 2rem;
+
+        .wrapper {
+            @include span-columns(10);
+            @include shift(1);
+        }
+    }
+}

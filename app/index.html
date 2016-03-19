@@ -32,10 +32,7 @@
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-    <link rel="stylesheet" href="css/materialize.css?v=1.0">
     <link rel="stylesheet" href="css/app.css?v=1.0">
-    <!-- Required to use Material Icons ligature format -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -46,254 +43,193 @@
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <header>
-        <nav>
-            <div class="nav-wrapper">
-                <a href="#!" class="brand-logo">Logo</a>
-                <ul class="right hide-on-med-and-down">
-                    <li><a href="#intro"><i class="material-icons">glass</i></a></li>
-                    <li><a href="#test"><i class="material-icons">test</i></a></li>
-                    <li><a href="#cards"><i class="material-icons">card</i></a></li>
-                    <li><a href="mobile.html"><i class="material-icons">more_vert</i></a></li>
-                </ul>
-            </div>
+    <header class="main">
+        <nav class="nav">
+            <ul>
+                <li><a href="/example.html">Example</a></li>
+            </ul>
         </nav>
     </header>
 
-    <main>
+    <section class="container main">
+        <div class="wrapper">
+            <h1 id="main">Bitters example page</h1>
 
-        <div id="top" class="page row" role="document">
-            <div role="wrapper">
+            <p>The purpose of this HTML is to help determine what default settings are with Bitters and to make sure that all possible HTML Elements are included in this HTML so as to not miss any possible Elements when designing a site.</p>
 
-                <div class="parallax-container">
-                    <div class="parallax"><img src="https://source.unsplash.com/category/buildings/1600x900"></div>
-                </div>
+            <hr>
 
-                <!--
-                col: on anything that is involved in a grid
-                .s, .m, .l: correspond to small medium and large and the number means how many cols it takes up
-                valign-wrapper: on the parent of the child you want to align vertically
-                center-align: center align text (other options: left-align, right-align) -->
-                <div class="container">
-                    <div class="row">
-                        <div class="col s12 m3 l1 flow-text valign-wrapper center-align"><span class="col valign">1</span></div>
-                        <div class="col s12 m3 l1 flow-text valign-wrapper center-align"><span class="col valign">2</span></div>
-                        <div class="col s12 m3 l1 flow-text valign-wrapper center-align"><span class="col valign">3</span></div>
-                        <div class="col s12 m3 l1 flow-text valign-wrapper center-align"><span class="col valign">4</span></div>
-                        <div class="col s12 m3 l1 flow-text valign-wrapper center-align"><span class="col valign">5</span></div>
-                        <div class="col s12 m3 l1 flow-text valign-wrapper center-align"><span class="col valign">6</span></div>
-                        <div class="col s12 m3 l1 flow-text valign-wrapper center-align"><span class="col valign">7</span></div>
-                        <div class="col s12 m3 l1 flow-text valign-wrapper center-align"><span class="col valign">8</span></div>
-                        <div class="col s12 m3 l1 flow-text valign-wrapper center-align"><span class="col valign">9</span></div>
-                        <div class="col s12 m3 l1 flow-text valign-wrapper center-align"><span class="col valign">10</span></div>
-                        <div class="col s12 m3 l1 flow-text valign-wrapper center-align"><span class="col valign">11</span></div>
-                        <div class="col s12 m3 l1 flow-text valign-wrapper center-align"><span class="col valign">12</span></div>
+            <h1 id="headings">Headings</h1>
+
+            <h1>h1. Heading</h1>
+            <h2>h2. Heading</h2>
+            <h3>h3. Heading</h3>
+            <h4>h4. Heading</h4>
+            <h5>h5. Heading</h5>
+            <h6>h6. Heading</h6>
+
+            <hr>
+
+            <h1 id="paragraph">Paragraph</h1>
+
+            <p>Lorem ipsum dolor sit amet, <a href="#" title="test link">test link</a> adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.</p>
+
+            <p>Lorem ipsum dolor sit amet, <em>emphasis</em> consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.</p>
+
+            <hr>
+
+            <h1 id="list_types">List Types</h1>
+
+            <h3>Definition List</h3>
+            <dl>
+                <dt>Definition List Title</dt>
+                <dd>This is a definition list division.</dd>
+            </dl>
+
+            <h3>Ordered List</h3>
+            <ol>
+                <li>List Item 1</li>
+                <li>List Item 2</li>
+                <li>List Item 3</li>
+            </ol>
+
+            <h3>Unordered List</h3>
+            <ul>
+                <li>List Item 1</li>
+                <li>List Item 2</li>
+                <li>List Item 3</li>
+            </ul>
+
+            <h3>%default-ol Ordered List</h3>
+            <ol class="default">
+                <li>List Item 1</li>
+                <li>List Item 2</li>
+                <li>List Item 3</li>
+            </ol>
+
+            <h3>%default-ul Unordered List</h3>
+            <ul class="default">
+                <li>List Item 1</li>
+                <li>List Item 2</li>
+                <li>List Item 3</li>
+            </ul>
+
+            <hr>
+
+            <h1 id="form_elements">Fieldsets and Form Elements</h1>
+
+            <fieldset>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus.</p>
+
+                <form lpformnum="1">
+                    <h2>Form Element</h2>
+
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui.</p>
+
+                    <p><label for="text_field">Text Field:</label>
+                        <input type="text" id="text_field" autocomplete="off" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAkCAYAAADo6zjiAAAAAXNSR0IArs4c6QAAAeJJREFUWAntk88rRFEUx71nSlnMkpK/YMTCBmVBibKQpWRhoShspgw1Y2aahQUlFn5sLEwpTUoRUmInURZkZmsjFtYSmudz5OgaZmHjKffV6Xu+53zPPeed+55T4tOTTCYHaD3o+tRf2oawOj8HeHt33wcIyBjcRwUwjtVj167rLsbj8TP8Tw+6csdxxjzPayZxj59OJBJ7n0SQTCZTmsvlRtC1Q5+wTWrThTrhLolq8AJxGGvB+vP5/DHxbrNAmsNPySXRtGE9+LvEw6aOuJPNZnfIzeF3Yt3YKrolU6e+XME0gkoNCMJlM8sUvW3oPRchXvPumzCFrkoDqVSqF12HckViQ+SalCvKAK1KTKRAhpIvVZ9iujKu4uNg6r7VySHkWvQwRRnAU1KIfAtFc4Vag/+oRgY4Moo/XN7qjnvMaQB+qL6JxB8DgcCxxorpJM8GvvRyKY5IMz1AEP4MDHK3LxqneIb4pXJFYhPRaPRWOX/POrFd5YrEFjjvRLmiG4vFbiC1CKTBAbYCb0S8pSJB+EMwGGwgP4ntY2tYB7/hvKkj5oVCoS5wFNvGNrjKPupHTJ36jjq/jQw0S89h+QZ8ff7vAHwbV6z+3Nf12+Z2A3YDdgN2A3YDdgN2A3YDf2IDrwcSt9jHU+IqAAAAAElFTkSuQmCC&quot;); background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; background-repeat: no-repeat;"></p>
+
+                        <p><label for="text_area">Text Area:</label>
+                            <textarea id="text_area"></textarea></p>
+
+                            <p><label for="select_element">Select Element:</label>
+                                <select name="select_element">
+                                    <optgroup label="Option Group 1">
+                                        <option value="1">Option 1</option>
+                                        <option value="2">Option 2</option>
+                                        <option value="3">Option 3</option>
+                                    </optgroup>
+                                    <optgroup label="Option Group 2">
+                                        <option value="1">Option 1</option>
+                                        <option value="2">Option 2</option>
+                                        <option value="3">Option 3</option>
+                                    </optgroup>
+                                </select></p>
+
+                                <p><label for="radio_buttons">Radio Buttons:</label>
+                                    <label>
+                                        <input type="radio" class="radio" name="radio_button" value="radio_1"> Radio 1
+                                    </label>
+                                    <label>
+                                        <input type="radio" class="radio" name="radio_button" value="radio_2"> Radio 2
+                                    </label>
+                                    <label>
+                                        <input type="radio" class="radio" name="radio_button" value="radio_3"> Radio 3
+                                    </label>
+                                </p>
+
+                                <p><label for="checkboxes">Checkboxes:</label>
+                                    <label>
+                                        <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"> Checkbox 1
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" class="checkbox" name="checkboxes" value="check_2"> Checkbox 2
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" class="checkbox" name="checkboxes" value="check_3"> Checkbox 3
+                                    </label>
+                                </p>
+
+                                <p><label for="password">Password:</label>
+                                    <input type="password" class="password" name="password" autocomplete="off" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAkCAYAAADo6zjiAAAAAXNSR0IArs4c6QAAAeJJREFUWAntk88rRFEUx71nSlnMkpK/YMTCBmVBibKQpWRhoShspgw1Y2aahQUlFn5sLEwpTUoRUmInURZkZmsjFtYSmudz5OgaZmHjKffV6Xu+53zPPeed+55T4tOTTCYHaD3o+tRf2oawOj8HeHt33wcIyBjcRwUwjtVj167rLsbj8TP8Tw+6csdxxjzPayZxj59OJBJ7n0SQTCZTmsvlRtC1Q5+wTWrThTrhLolq8AJxGGvB+vP5/DHxbrNAmsNPySXRtGE9+LvEw6aOuJPNZnfIzeF3Yt3YKrolU6e+XME0gkoNCMJlM8sUvW3oPRchXvPumzCFrkoDqVSqF12HckViQ+SalCvKAK1KTKRAhpIvVZ9iujKu4uNg6r7VySHkWvQwRRnAU1KIfAtFc4Vag/+oRgY4Moo/XN7qjnvMaQB+qL6JxB8DgcCxxorpJM8GvvRyKY5IMz1AEP4MDHK3LxqneIb4pXJFYhPRaPRWOX/POrFd5YrEFjjvRLmiG4vFbiC1CKTBAbYCb0S8pSJB+EMwGGwgP4ntY2tYB7/hvKkj5oVCoS5wFNvGNrjKPupHTJ36jjq/jQw0S89h+QZ8ff7vAHwbV6z+3Nf12+Z2A3YDdgN2A3YDdgN2A3YDf2IDrwcSt9jHU+IqAAAAAElFTkSuQmCC&quot;); background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; background-repeat: no-repeat;">
+                                </p>
+
+                                <p><label for="file">File Input:</label>
+                                    <input type="file" class="file" name="file">
+                                </p>
 
 
-                        <a class="waves-effect waves-light btn-large" href="#">Wave</a>
-                        <a href="#!" class="waves-effect waves-circle waves-light btn-floating secondary-content">
-                            <i class="material-icons">add</i>
-                        </a>
+                                <p><input type="submit" value="Submit"></p>
+                            </form>
+                        </fieldset>
+
+                        <hr>
+
+                        <h1 id="tables">Tables</h1>
+
+                        <table cellspacing="0" cellpadding="0">
+                            <tbody><tr>
+                                <th>Table Header 1</th><th>Table Header 2</th><th>Table Header 3</th>
+                            </tr>
+                            <tr>
+                                <td>Division 1</td><td>Division 2</td><td>Division 3</td>
+                            </tr>
+                            <tr class="even">
+                                <td>Division 1</td><td>Division 2</td><td>Division 3</td>
+                            </tr>
+                            <tr>
+                                <td>Division 1</td><td>Division 2</td><td>Division 3</td>
+                            </tr>
+                        </tbody></table>
                     </div>
 
-                    <div class="row">
-                        <div class="flow-text valign-wrapper center-align"><div class="col s12 m12 l12 valign">1</div></div>
-                        <div class="divider"></div>
-                        <div class="flow-text valign-wrapper center-align"><div class="col s12 m12 l12 valign">2</div></div>
-                        <div class="divider"></div>
-                        <div class="flow-text valign-wrapper center-align"><div class="col s12 m12 l12 valign">3</div></div>
-                        <div class="divider"></div>
-                        <div class="flow-text valign-wrapper center-align"><div class="col s12 m12 l12 valign">4</div></div>
-                        <div class="divider"></div>
-                        <div class="flow-text valign-wrapper center-align"><div class="col s12 m12 l12 valign">5</div></div>
-                        <div class="divider"></div>
-                        <div class="flow-text valign-wrapper center-align"><div class="col s12 m12 l12 valign">6</div></div>
-                        <div class="divider"></div>
-                        <div class="flow-text valign-wrapper center-align"><div class="col s12 m12 l12 valign">7</div></div>
-                        <div class="divider"></div>
-                        <div class="flow-text valign-wrapper center-align"><div class="col s12 m12 l12 valign">8</div></div>
-                        <div class="divider"></div>
-                        <div class="flow-text valign-wrapper center-align"><div class="col s12 m12 l12 valign">9</div></div>
-                        <div class="divider"></div>
-                        <div class="flow-text valign-wrapper center-align"><div class="col s12 m12 l12 valign">10</div></div>
-                        <div class="divider"></div>
-                        <div class="flow-text valign-wrapper center-align"><div class="col s12 m12 l12 valign">11</div></div>
-                        <div class="divider"></div>
-                        <div class="flow-text valign-wrapper center-align"><div class="col s12 m12 l12 valign">12</div></div>
-                    </div>
+    </section>
 
-                    <!--
-                    chip: gives a tag like appearance
-                    flow-text: is truly responsive text -->
-                    <div class="row">
-                        <div class="chip flow-text">1</div>
-                        <div class="chip flow-text">2</div>
-                        <div class="chip flow-text">3</div>
-                        <div class="chip flow-text">4</div>
-                        <div class="chip flow-text">5</div>
-                        <div class="chip flow-text">6</div>
-                        <div class="chip flow-text">7</div>
-                        <div class="chip flow-text">8</div>
-                        <div class="chip flow-text">9</div>
-                        <div class="chip flow-text">10</div>
-                        <div class="chip flow-text">11</div>
-                        <div class="chip flow-text">12</div>
-                    </div>
+    <footer class="main">
+        <div class="wrapper">
+            <p>Bourbon is maintained and funded by <a href="//thoughtbot.com">thoughtbot, inc</a>. Tweet your questions or suggestions to <a href="//twitter.com/bourbonsass">@bourbonsass</a> and while you’re at it follow us too.</p>
+            <p>Copyright © 2013–2015 <a href="//thoughtbot.com">thoughtbot, inc</a>. Bourbon is free software, and may be redistributed under the terms specified in the <a href="//github.com/thoughtbot/bourbon/blob/master/LICENSE.md">license</a>.</p>
+            <nav class="actions">
+                <a href="/example.html">Example</a>
+                <a href="//github.com/thoughtbot/bitters">GitHub</a>
+            </nav>
+        </div>
+    </footer>
 
-                    <!--
-                    chip: gives a tag like appearance
-                    flow-text: is truly responsive text -->
-                    <div class="tabs-wrapper">
-                        <div class="row">
-                            <div class="chip flow-text"><i class="material-icons">grade</i>1</div>
-                            <div class="chip flow-text"><i class="material-icons">invert_colors</i>2</div>
-                            <div class="chip flow-text"><i class="material-icons">invert_colors</i>3</div>
-                            <div class="chip flow-text"><i class="material-icons">invert_colors</i>4</div>
-                            <div class="chip flow-text"><i class="material-icons">invert_colors</i>5</div>
-                            <div class="chip flow-text"><i class="material-icons">invert_colors</i>6</div>
-                            <div class="chip flow-text"><i class="material-icons">invert_colors</i>7</div>
-                            <div class="chip flow-text"><i class="material-icons">invert_colors</i>8</div>
-                            <div class="chip flow-text"><i class="material-icons">invert_colors</i>9</div>
-                            <div class="chip flow-text"><i class="material-icons">invert_colors</i>10</div>
-                            <div class="chip flow-text"><i class="material-icons">invert_colors</i>11</div>
-                            <div class="chip flow-text"><i class="material-icons">invert_colors</i>12</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="parallax-container">
-                    <div class="parallax"><img src="https://source.unsplash.com/category/nature/1600x900"></div>
-                </div>
-
-                <!--
-                chip: gives a tag like appearance
-                flow-text: is truly responsive text -->
-                <div class="teal lighten-2">
-                    <div class="row">
-                        <div class="col s12 m6 l3">
-                            <div class="card">
-                                <div class="card-image">
-                                    <img src="https://source.unsplash.com/random">
-                                    <span class="card-title">Card Title</span>
-                                </div>
-                                <div class="card-content">
-                                    <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-                                </div>
-                                <div class="card-action">
-                                    <a href="#">This is a link</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col s12 m6 l3">
-                            <div class="card">
-                                <div class="card-image">
-                                    <img src="https://source.unsplash.com/random">
-                                    <span class="card-title">Card Title</span>
-                                </div>
-                                <div class="card-content">
-                                    <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-                                </div>
-                                <div class="card-action">
-                                    <a href="#">This is a link</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col s12 m6 l3">
-                            <div class="card">
-                                <div class="card-image">
-                                    <img src="https://source.unsplash.com/random">
-                                    <span class="card-title">Card Title</span>
-                                </div>
-                                <div class="card-content">
-                                    <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-                                </div>
-                                <div class="card-action">
-                                    <a href="#">This is a link</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col s12 m6 l3">
-                            <div class="card">
-                                <div class="card-image">
-                                    <img src="https://source.unsplash.com/random">
-                                    <span class="card-title">Card Title</span>
-                                </div>
-                                <div class="card-content">
-                                    <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-                                </div>
-                                <div class="card-action">
-                                    <a href="#">This is a link</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="parallax-container">
-                    <div class="parallax"><img src="https://source.unsplash.com/category/food/1600x900"></div>
-                </div>
-
-                <div class="container">
-                    <div class="col s12 m6 l6">
-                        <div class="card">
-                            <div class="card-image waves-effect waves-block waves-light">
-                                <img class="activator" src="https://source.unsplash.com/random">
-                            </div>
-                            <div class="card-content">
-                                <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                                <p><a href="#">This is a link</a></p>
-                            </div>
-                            <div class="card-reveal">
-                                <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                                <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </main>
-        <footer class="page-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col l6 s12">
-                        <h5 class="white-text">Footer</h5>
-                        <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
-                    </div>
-                    <div class="col l4 offset-l2 s12">
-                        <h5 class="white-text">Links</h5>
-                        <ul>
-                            <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                            <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                            <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                            <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-copyright">
-                <div class="container">
-                    © 2014 Copyright Text
-                    <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
-                </div>
-            </div>
-        </footer>
-
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='https://www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
-            </script>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='https://www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+        ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
 
 
-            <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-            <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
-            <script src="js/materialize.js"></script>
-            <script src="js/app.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+    <script src="js/app.js"></script>
 
-        </body>
-        </html>
+</body>
+</html>
