@@ -1,11 +1,12 @@
 # Emu #
 
-> Helper framework that has automation using [Gulp](http://gulpjs.com/) for the build process (compression, compilation and browser syncing) and [Bourbon and Neat](http://bourbon.io/) (maintained and funded by thoughtbot, inc) for the SCSS framework.
+> Helper framework that has automation using [Gulp](http://gulpjs.com/) for the build process (compression, compilation and browser syncing) and [Bourbon and Neat](http://bourbon.io/) (maintained and funded by [thoughtbot, inc](https://thoughtbot.com/)) for the SCSS framework.
 
 
 ### What is this repository for? ###
 
-Starting development on a new project or adding to an existing project?
+Speeding up prototyping and building of web applications.
+Use the documentation on the http://bourbon.io/ website if you haven't used it before.
 
 
 # Getting Started #
