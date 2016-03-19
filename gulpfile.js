@@ -35,6 +35,7 @@ var COMPATIBILITY     = ['last 2 versions', 'ie >= 9'];
 // =============================================================================
 // Paths
 // =============================================================================
+var corePath          = '_core';
 var srcPath           = 'app';
 var buildPath         = 'build';
 
@@ -66,7 +67,6 @@ gulp.task('html', function() {
 // =============================================================================
 // Compile Sass into CSS
 // In production, the CSS is compressed
-// Runs 2 tasks, a core and a src as to seperate the core updates
 // =============================================================================
 gulp.task('sass', function() {
     return gulp
@@ -87,6 +87,15 @@ gulp.task('sass', function() {
 // In production, the file is minified
 // Runs 2 tasks, a core and a src as to seperate the core updates
 // =============================================================================
+gulp.task('coreJavascript', function() {
+    return gulp
+        .src(corePath + '/js/**/*.js')
+        .pipe(sourcemaps.init())
+        .pipe(concat('core.js'))
+        .pipe(sourcemaps.write())
+        .pipe(gulp.dest(buildPath + '/js'));
+});
+
 gulp.task('javascript', function() {
     return gulp
         .src(srcPath + '/js/**/*.js')
@@ -110,6 +119,16 @@ gulp.task('images', function() {
 
 
 // =============================================================================
+// Copy core fonts to the buildPath folder
+// =============================================================================
+gulp.task('coreFonts', function() {
+    return gulp
+        .src(corePath + '/fonts/**/*')
+        .pipe(gulp.dest(buildPath + '/fonts'));
+});
+
+
+// =============================================================================
 // Copy src fonts to the buildPath folder
 // =============================================================================
 gulp.task('fonts', function() {
@@ -125,7 +144,9 @@ gulp.task('fonts', function() {
 gulp.task('build', function(done) {
     sequence('clean', [
         'sass',
+        'coreFonts',
         'fonts',
+        'coreJavascript',
         'javascript',
         'images',
         'html'
@@ -166,9 +187,9 @@ gulp.task('dynamic-server', ['build'], function() {
 // =============================================================================
 gulp.task('default', ['build', 'server'], function() {
     gulp.watch([srcPath + '/*.html'], ['html', browser.reload]);
-    gulp.watch([srcPath + '/sass/**/*.scss'], ['sass', browser.reload]);
-    gulp.watch([srcPath + '/fonts/**/*.fonts'], ['fonts', browser.reload]);
-    gulp.watch([srcPath + '/js/**/*.js'], ['javascript', browser.reload]);
+    gulp.watch([corePath + '/sass/**/*.scss', srcPath + '/sass/**/*.scss'], ['sass', browser.reload]);
+    gulp.watch([corePath + '/fonts/**/*.fonts', srcPath + '/fonts/**/*.fonts'], ['coreFonts', 'fonts', browser.reload]);
+    gulp.watch([corePath + '/js/**/*.js', srcPath + '/js/**/*.js'], ['coreJavascript', 'javascript', browser.reload]);
     gulp.watch([srcPath + '/img/**/*'], ['images', browser.reload]);
 });
 
@@ -178,8 +199,8 @@ gulp.task('default', ['build', 'server'], function() {
 // =============================================================================
 gulp.task('dynamic', ['build', 'dynamic-server'], function() {
     gulp.watch([srcPath + '/*.html'], ['html', browser.reload]);
-    gulp.watch([srcPath + '/sass/**/*.scss'], ['sass', browser.reload]);
-    gulp.watch([srcPath + '/fonts/**/*.fonts'], ['fonts', browser.reload]);
-    gulp.watch([srcPath + '/js/**/*.js'], ['javascript', browser.reload]);
+    gulp.watch([corePath + '/sass/**/*.scss', srcPath + '/sass/**/*.scss'], ['sass', browser.reload]);
+    gulp.watch([corePath + '/fonts/**/*.fonts', srcPath + '/fonts/**/*.fonts'], ['coreFonts', 'fonts', browser.reload]);
+    gulp.watch([corePath + '/js/**/*.js', srcPath + '/js/**/*.js'], ['coreJavascript', 'javascript', browser.reload]);
     gulp.watch([srcPath + '/img/**/*'], ['images', browser.reload]);
 });
