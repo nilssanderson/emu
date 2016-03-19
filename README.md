@@ -1,4 +1,4 @@
-# Gecko #
+# Emu #
 
 > Helper framework that has automation using [Gulp](http://gulpjs.com/) for the build process (compression, compilation and browser syncing) and [Materialize](http://materializecss.com/) (built based on Google's Material Design) for the SCSS framework.
 
@@ -10,10 +10,10 @@ Starting development on a new project or adding to an existing project?
 
 # Getting Started #
 
-To get started download [Gecko](https://github.com/nilssanderson/gecko) with Git:
+To get started download [Emu](https://github.com/nilssanderson/emu) with Git:
 ```
-git clone https://github.com/nilssanderson/gecko.git
-cd gecko
+git clone https://github.com/nilssanderson/emu.git
+cd emu
 npm install
 ```
 
@@ -44,27 +44,27 @@ Delete the app folder and update the gulpfile srcPath to 'YOUR_SRC_PATH' so you 
 
 Follow the below instructions to add the framework to an already existing project and to keep it separate from your current repository:
 ```
-git submodule add https://github.com/nilssanderson/gecko.git gecko
+git submodule add https://github.com/nilssanderson/emu.git emu
 git submodule init
 git submodule update
 ```
 
 Once the framework has been added in as a submodule, a `.gitmodules` file will be created. You will need to specify the branch that you wish to track on the framework. Edit the `.gitmodules` file to include the branch:
 ```
-[submodule "gecko"]
-	path = gecko
-	url = https://github.com/nilssanderson/gecko.git
+[submodule "emu"]
+	path = emu
+	url = https://github.com/nilssanderson/emu.git
 	branch = master
 ```
 
-Run this if there have been any updates to the [Gecko](https://github.com/nilssanderson/gecko) framework to pull down the latest changes:
+Run this if there have been any updates to the [Emu](https://github.com/nilssanderson/emu) framework to pull down the latest changes:
 ```
 git submodule update
 ```
 
 A detached HEAD state may occur when updating a submodule. Once an update has been run, just make sure that the submodule is tracking the `master` branch:
 ```
-cd gecko
+cd emu
 git checkout master
 ```
 
