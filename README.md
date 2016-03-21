@@ -13,9 +13,15 @@ Use the documentation on the http://bourbon.io/ website if you haven't used it b
 
 To get started download [Emu](https://github.com/nilssanderson/emu) with Git:
 ```
-git clone https://github.com/nilssanderson/emu.git
+git clone --recursive https://github.com/nilssanderson/emu.git
 cd emu
 npm install
+```
+
+If you have already cloned the repository and the submodule has not been pulled down, then run:
+```
+cd emu
+git submodule update --init --recursive
 ```
 
 Then to build the framework:
